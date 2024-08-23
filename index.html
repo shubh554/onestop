@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from demo.themenio.com/finance/index-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 19:37:04 GMT -->
+
+<head>
+	<title>One Solution</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="icon" href="image/favicon.png" type="image/png" sizes="16x16"> -->
+	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+	<link id="style-css" rel="stylesheet" type="text/css" href="css/stylec64e.css?ver=1.1.1">
+	<link rel="stylesheet" href="css/styles.css">
+	<style type="text/css">
+		/* Only Demo Purpose */
+		.colorPanel {
+			margin: 0px;
+			padding: 5px;
+			position: fixed;
+			z-index: 100;
+			min-width: 20px;
+			border-radius: 0 3px 3px 0;
+			background-color: #4b00a0;
+			top: 35%;
+			text-align: center
+		}
+
+		.colorPanel ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			display: none
+		}
+
+		.colorPanel ul li {
+			display: block;
+			margin-top: 10px;
+		}
+
+		.colorPanel ul a {
+			display: block;
+			margin: 0 auto;
+			width: 20px;
+			height: 20px;
+			border: #fff 1px solid;
+		}
+
+		.colorPanel a.cart,
+		.colorPanel a.home-solid {
+			border-bottom: 1px solid rgba(255, 255, 255, .3);
+			margin-bottom: 6px;
+			padding-bottom: 8px;
+			display: block;
+		}
+
+		.colorPanel a.home-solid i {
+			display: block;
+			margin: 12px auto 4px;
+		}
+
+		.colorPanel a.home-solid {
+			color: #fff;
+			font-weight: bold;
+			font-size: 9px;
+			text-transform: uppercase
+		}
+
+		#cpToggle {
+			display: block;
+			height: 30px;
+			margin: 0 auto;
+			width: 28px;
+			line-height: 30px;
+			background-size: cover;
+		}
+
+		.cp-custom {
+			padding: 12px;
+		}
+
+		.cp-custom #cpToggle {
+			background: none;
+		}
+
+		.cp-custom i {
+			font-size: 15px;
+			color: #fff;
+		}
+
+		.cus-width {
+			width: 30% !important;
+		}
+	</style>
+</head>
+
+<body class="site-body style-v1">
+	<!-- Header -->
+	<header class="site-header header-s1 is-sticky">
+		<!-- Topbar -->
+		<!-- <div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="top-aside top-left">
+						<ul class="top-nav">
+							<li><a href="#">On Press</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Our Offices</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="top-aside top-right clearfix">
+						<ul class="top-contact clearfix">
+							<li class="t-email t-email1">
+								<em class="fa fa-envelope-o" aria-hidden="true"></em>
+								<span><a href="#">contact@youremail.com</a></span>
+							</li>
+							<li class="t-phone t-phone1">
+								<em class="fa fa-phone" aria-hidden="true"></em>
+								<span>+123-456-789</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- #end Topbar -->
+		<!-- Navbar -->
+		<div class="navbar navbar-primary">
+			<div class="container">
+				<!-- Logo -->
+				<img class="nv-img" src="image//OSLS.png" alt="">
+				<!-- <a class="" href="index.html">
+					<img class="logo logo-dark" alt="" src="image/OSLS.png" srcset="image/logo2x.png 2x">
+					dfdfdfd
+					<img class="logo logo-light" alt="" src="image/OSLS.png" srcset="image/logo-light2x.png 2x">
+				</a> -->
+				<!-- #end Logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav"
+						aria-expanded="false">
+						<span class="sr-only">Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Q-Button for Mobile -->
+					<div class="quote-btn"><a class="btn" href="get-a-quote.html">Sign in</a></div>
+				</div>
+				<!-- MainNav -->
+				<nav class="navbar-collapse collapse" id="mainnav">
+					<ul class="nav navbar-nav">
+						<li class="dropdown active"><a href="index.html">Home</a>
+							<!-- <ul class="dropdown-menu">
+								<li><a href="index-2.html">Home - Default</a></li>
+								<li><a href="index-v2.html">Home - Version 2</a></li>
+								<li><a href="index-v3.html">Home - Version 3</a></li>
+								<li><a href="index-v4.html">Home - Version 4</a></li>
+								<li><a href="index-static.html">Home - Image</a></li>
+							</ul> -->
+						</li>
+						<li><a href="index.html#about">About us</a>
+							<!-- <ul class="dropdown-menu">
+								<li><a href="faqs.html">FAQ's</a></li>
+								<li><a href="teams.html">Teams</a></li>
+								<li><a href="about-us-alter.html">About - Alter</a></li>
+								<li><a href="teams-alter.html">Teams - Alter</a></li>
+								<li><a href="contact-extend.html">Contact - Extend</a></li>
+								<li><a href="gallery.html">Gallery <span class="label label-info">New</span></a></li>
+								<li><a href="portfolio.html">Portfolio <span class="label label-info">New</span></a>
+								</li>
+								<li><a href="portfolio-single.html">Portfolio Single <span
+											class="label label-info">New</span></a></li>
+								<li><a href="#">Shortcode <span class="label label-danger">Hot &amp; New</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="shortcode.html">Shortcode - Element</a></li>
+										<li><a href="shortcode-carousel.html">Shortcode - Carousel</a></li>
+										<li><a href="shortcode-banner.html">Shortcode - Banner</a></li>
+									</ul>
+								</li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul> -->
+						</li>
+						<li class="dropdown">
+							<a href="" class="active dropdown-toggle">Services <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<!-- <li><a href="service-alter.html">Services List - Alter</a></li> -->
+								<li><a href="businessFormation.html">Business Formation</a></li>
+								<li><a href="ein.html">EIN Numbers</a></li>
+								<li><a href="businessPlan.html">Business Plan Creation</a></li>
+								<li><a href="businessCredit.html">Business Credit</a></li>
+								<li><a href="funding.html">Funding Partnership</a></li>
+								<li><a href="wedev.html">Website Creation</a></li>
+								<!-- <li><a href="paymentsetup.html">Website Payment Setup</a></li> -->
+								<li><a href="MarketingStrategy.html">Marketing Strategy</a></li>
+								<li><a href="propertyAcquisition.html">Property Acquisition</a></li>
+								<li><a href="zoning.html">Zoning, Permitting, and Planning</a></li>
+								<li><a href="Compliance.html">Compliance</a></li>
+								<li><a href="Insurance.html">Insurance</a></li>
+							</ul>
+						</li>
+
+						<!-- <li><a href="testimonial.html">Testimonial</a></li>
+						<li><a href="news.html">News</a></li> -->
+						<li class="quote-btn"><a class="btn" href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<!-- #end MainNav -->
+			</div>
+		</div>
+		<!-- #end Navbar -->
+		<!-- Banner/Slider -->
+
+		<br><br><br>
+
+
+		<div class="call-action cta-small has-bg light bg-secondary"
+			style="background-image: url('image/slider-sm-a.jpg');">
+			<div class="cta-block">
+				<div class="container">
+					<div class="row">
+						<div class="banner-text al-left pos-left dark">
+							<h2>One Stop Legal Solutions</h2>
+							<p>Business consulting and compliance, LLC is a leading provider of business
+								services, dedicated to simplifying the complexities of starting and
+								operating a business, so clients can focus on growing their ventures.</p>
+							<a href="/contact.html" class="btn">SCHEDULE A MEET</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+
+
+	<div id="about" class="section section-content section-pad">
+		<div class="container">
+			<div class="content row">
+
+				<div class="row row-vm">
+					<div class="col-md-6 res-m-bttm">
+						<h5 class="heading-sm-lead">About us</h5>
+						<h2 class="heading-section">Who we are</h2>
+						<p>
+							One Stop Legal Solutions, LLC is a leading provider of comprehensive business services,
+							dedicated to helping businesses thrive. Our team of seasoned professionals brings extensive
+							experience and expertise to guide you through the complexities of the business world. We
+							offer tailored solutions that align with your unique goals and vision.
+
+
+						</p>
+						<p>
+							At One Stop Legal Solutions, we take pride in understanding your specific needs and
+							delivering personalized support. Our commitment to excellence and integrity ensures that we
+							are your trusted partners in achieving business success. With a focus on innovation, we
+							continuously adapt to the evolving business landscape, providing you with the most effective
+							strategies. Our proactive approach ensures that your business is always a step ahead.
+
+						</p>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<img class="no-round" src="image/about.webp" alt="">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="section section-contents section-pad image-on-right bg-light">
+		<div class="container">
+			<div class="row">
+
+				<h5 class="heading-sm-lead">Our Services</h5>
+				<h2 class="heading-section">What we do</h2>
+				<div class="feature-intro">
+					<div class="">
+						<div class="">
+							<div class="sutom-grid-container d-flex justify-content-start align-items-center ">
+								<div class="col-sm-6 res-s-bttm cus-width">
+									<div class="icon-box style-s1 photo-plx-full">
+										<em class="fa fa-bar-chart-o" aria-hidden="true"></em>
+									</div>
+									<h4>Obtaining EIN Numbers</h4>
+									<p>An Employer Identification Number (EIN) is a crucial element for any business
+										entity</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-users" aria-hidden="true"></em>
+									</div>
+									<h4>Establishing Business Credit</h4>
+									<p>Building business credit is crucial for entrepreneurs to access financial
+										resources and support growth.</p>
+								</div>
+
+								<div class="col-sm-6 res-s-bttm cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-credit-card" aria-hidden="true"></em>
+									</div>
+									<h4>Funding Partnership Solutions</h4>
+									<p>Securing adequate funding is crucial for success in today's competitive business
+										landscape.</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-code" aria-hidden="true"></em>
+									</div>
+									<h4>Website Creation</h4>
+									<p>In today's digital world, a professional website is essential for businesses of
+										all sizes.</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-paypal" aria-hidden="true"></em>
+									</div>
+									<h4>Payment Processing Setup</h4>
+									<p>Efficient payment processing is vital for smooth operations and customer
+										satisfaction in today's business world.</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-briefcase" aria-hidden="true"></em>
+									</div>
+									<h4>Business Plan Creation</h4>
+									<p>Creating a robust business plan is a crucial step in setting your business on a
+										path to success.</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-trademark" aria-hidden="true"></em>
+									</div>
+									<h4>Property Acquisition</h4>
+									<p>Property acquisition is vital for business growth, expansion, or investment.</p>
+								</div>
+								<div class="col-sm-6 cus-width">
+									<div class="icon-box style-s1">
+										<em class="fa fa-trademark" aria-hidden="true"></em>
+									</div>
+									<h4>Zoning, Permitting, and Planning</h4>
+									<p>Our firm specializes in helping municipalities navigate zoning, permitting, and
+										planning processes.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- <div class="section-bg imagebg"><img src="image/photo-half-a.jpg" alt=""></div> -->
+	</div>
+
+
+	<!-- Content -->
+	<!-- <div class="section section-content section-pad">
+		<div class="container">
+			<div class="content row">
+				<div class="wide-sm center">
+					<h1>What We Offer</h1>
+					<p>At One Stop Legal Solutions, LLC, we offer a wide range of services designed to meet the diverse
+						needs of entrepreneurs and established businesses alike. Our goal is to simplify the
+						complexities associated with starting, managing, and growing a business by providing
+						comprehensive solutions that cover every aspect of your entrepreneurial journey.
+					</p>
+				</div>
+				Feature Row  -->
+	<!-- <div class="feature-row feature-service-row row feature-s5">
+					<div class="col-sm-4 col-xs-12 even">
+						
+						<div class="feature">
+							<a href="service-single.html">
+								<div class="fbox-photo">
+									<img src="image/photo-pt-e.jpg" alt="">
+								</div>
+								<div class="fbox-over">
+									<h3 class="title">Business Formation</h3>
+									<div class="fbox-content">
+										<p>Expert guidance in establishing LLCs, Corporations, and S Corporations,
+											ensuring compliance with all legal requirements.</p>
+									</div>
+
+								</div>
+							</a>
+						</div> -->
+	<!-- End Feature box -->
+	<!-- </div>
+					<div class="col-sm-4 col-xs-12 odd"> -->
+	<!-- Feature box -->
+	<!-- <div class="feature">
+							<a href="service-single.html">
+								<div class="fbox-photo">
+									<img src="image/photo-pt-f.jpg" alt="">
+								</div>
+								<div class="fbox-over">
+									<h3 class="title">Legal Compliance & Documentation</h3>
+									<div class="fbox-content">
+										<p>We handle all necessary paperwork, from Articles of Incorporation to
+											Operating Agreements, ensuring your business is built on a solid legal
+											foundation..</p>
+									</div>
+								</div>
+							</a>
+						</div> -->
+	<!-- End Feature box -->
+	<!-- </div>
+					<div class="col-sm-4 col-xs-12 even"> -->
+	<!-- Feature box -->
+	<!-- <div class="feature">
+							<a href="service-single.html">
+								<div class="fbox-photo">
+									<img src="image/photo-pt-g.jpg" alt="">
+								</div>
+								<div class="fbox-over">
+									<h3 class="title">Tax & Financial Planning</h3>
+									<div class="fbox-content">
+										<p>Tailored tax optimization strategies and financial planning services to help
+											you maximize benefits and minimize costs.</p>
+									</div>
+								</div>
+							</a>
+						</div> -->
+	<!-- End Feature box -->
+	<!-- </div> -->
+	<!-- <div class="col-sm-4 col-xs-12 even"> -->
+	<!-- Feature box -->
+	<!-- <div class="feature">
+							<a href="service-single.html">
+								<div class="fbox-photo">
+									<img src="image/photo-pt-g.jpg" alt="">
+								</div>
+								<div class="fbox-over">
+									<h3 class="title">Website Creation & Payment Processing</h3>
+									<div class="fbox-content">
+										<p>Professional website development and payment processing setup to enhance your
+											online presence and streamline transactions.</p>
+									</div>
+								</div>
+							</a>
+						</div> -->
+	<!-- End Feature box -->
+	<!-- </div>
+					<div class="col-sm-4 col-xs-12 even">
+					Feature box -->
+	<!-- <div class="feature">
+							<a href="service-single.html">
+								<div class="fbox-photo">
+									<img src="image/photo-pt-g.jpg" alt="">
+								</div>
+								<div class="fbox-over">
+									<h3 class="title">Business Credit & Funding Solutions</h3>
+									<div class="fbox-content">
+										<p>We assist in establishing business credit and securing funding, providing the
+											financial leverage you need to grow.</p>
+									</div>
+								</div>
+							</a> -->
+	<!-- </div> -->
+	<!-- End Feature box -->
+	<!-- </div>
+				</div>
+			</div>
+		</div>
+	</div>  -->
+	<!-- End Content -->
+	<!-- Content -->
+
+	<!-- End content -->
+
+	<!-- Testimonials -->
+	<!-- <div class="section section-quotes section-pad bg-dark light">
+		<div class="container">
+			<div class="content row">
+			
+				<h2 class="heading-md-lead center">Testimonials</h2>
+				<div class="gaps size-sm"></div>
+				<div class="testimonials center">
+					<div id="testimonial" class="quotes-slider">
+						<div class="owl-carousel loop has-carousel" data-items="2" data-loop="true" data-dots="true" data-auto="true">
+							<div class="item"> -->
+	<!-- Each Quotes -->
+	<!-- <div class="quotes">
+									<div class="quotes-text">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
+									</div>
+									<div class="profile">
+										<img src="image/profile-img.jpg" alt="">
+										<h5>Maria jaqline</h5>
+										<h6>CEO, Company Name</h6>
+									</div>
+								</div> -->
+	<!-- End Quotes -->
+	</div>
+	<!-- End Slide -->
+	<!-- Each Slide -->
+	<!-- <div class="item"> -->
+	<!-- Each Quotes -->
+	<!-- <div class="quotes">
+									<div class="quotes-text">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+									</div>
+									<div class="profile">
+										<img src="image/profile-img.jpg" alt="">
+										<h5>Maria jaqline</h5>
+										<h6>CEO, Company Name</h6>
+									</div>
+								</div> -->
+	<!-- End Quotes -->
+	<!-- </div> -->
+	<!-- Each Slide -->
+	<!-- <div class="item"> -->
+	<!-- Each Quotes -->
+	<!-- <div class="quotes">
+									<div class="quotes-text">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+									</div>
+									<div class="profile">
+										<img src="image/profile-img.jpg" alt="">
+										<h5>Maria jaqline</h5>
+										<h6>CEO, Company Name</h6>
+									</div>
+								</div> -->
+	<!-- End Quotes -->
+	<!-- </div> -->
+	<!-- </div> -->
+	<!-- End Slides -->
+	<!-- </div> -->
+	<!-- </div> -->
+
+	<!-- </div> -->
+	<!-- </div> -->
+	<!-- </div> -->
+	<!-- End Section -->
+
+	<!-- Call Action -->
+	<div class="call-action cta-small has-bg light bg-secondary" style="background-image: url('image/plx-cta.jpg');">
+		<div class="cta-block">
+			<div class="container">
+
+				<div class="content row">
+					<div class="cta-content wide-md center">
+						<h4>"For expert guidance and trusted solutions, rely on One Stop Legal Solutions, LLC."</h4>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+
+
+
+
+
+
+
+
+	<div class="section section-about section-pad">
+		<div class="container">
+			<div class="content row">
+
+				<div class="row">
+					<div class="col-md-3 res-m-bttm-sm">
+						<h2 class="heading-section-16 heading-md">Why One Stop Legal Solutions?</h2>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-md-6 res-m-bttm-xs">
+								<p>At One Stop Legal Solutions, we pride ourselves on providing comprehensive, tailored
+									services that cater to businesses of all sizes. Whether you're a startup or an
+									established company, our experienced professionals offer expert guidance to help you
+									navigate the complexities of legal compliance, business formation, and growth
+									strategies. We simplify the process, handling the intricate details so you can focus
+									on what matters most—running your business.</p>
+							</div>
+							<div class="col-md-6 res-m-bttm-xs">
+								<p>We are committed to making high-quality legal and business services accessible to
+									everyone. Our nationwide reach, flexible service packages, and online accessibility
+									ensure that you receive the support you need, no matter your location or business
+									size. With our client-centered approach, we prioritize your success and offer
+									ongoing support to help you thrive in a competitive market.</p>
+							</div>
+						</div>
+						<div class="gaps size-md"></div>
+						<div class="row">
+							<div class="col-md-6 res-m-bttm">
+								<img class="no-round" src="image/photo-sm-g.jpg" alt="">
+							</div>
+							<div class="col-md-6">
+								<h3 class="heading-md">Key Points:</h3>
+								<ul class="list-style arrow">
+									<li>Tailored Expertise: Customized solutions to fit your specific business needs.
+									</li>
+									<li>Comprehensive Services: Full spectrum of legal and business support.</li>
+									<li>Experienced Professionals: Guidance from seasoned experts across various
+										industries.</li>
+									<li>Client-Centered Approach: Ongoing support and dedication to your business's
+										long-term success.</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="call-action cta-small has-bg bg-secondary" style="background-image: url('image/plx-cta.jpg');">
+		<div class="cta-block">
+			<div class="container">
+				<div class="row">
+
+					<div class="row">
+						<div class="col-md-4 pad-r res-m-bttm">
+							<h2 class="heading-lead">Our team provides independent advice based on established research
+								methods.</h2>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-6 res-s-bttm">
+									<div class="icon-box style-s4 photo-plx-full">
+										<em class="fa fa-bar-chart-o" aria-hidden="true"></em>
+									</div>
+									<h4>Experienced</h4>
+									<p>We offer independent advice based on a wealth of experience and thorough
+										research.
+									</p>
+								</div>
+								<div class="col-sm-6">
+									<div class="icon-box style-s4">
+										<em class="fa fa-users" aria-hidden="true"></em>
+									</div>
+									<h4>Vibrant</h4>
+									<p>We are a dynamic group dedicated to driving growth and success for our clients.
+									</p>
+								</div>
+								<div class="gaps size-lg"></div>
+								<div class="col-sm-6 res-s-bttm">
+									<div class="icon-box style-s4">
+										<em class="fa fa-credit-card" aria-hidden="true"></em>
+									</div>
+									<h4>Professional</h4>
+									<p>We maintain the highest standards of professionalism in all our endeavors.</p>
+								</div>
+								<div class="col-sm-6">
+									<div class="icon-box style-s4">
+										<em class="fa fa-lightbulb-o" aria-hidden="true"></em>
+									</div>
+									<h4>Innovative</h4>
+									<p>We embrace innovation, continuously exploring new ideas to provide cutting-edge
+										solutions.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="section section-about section-pad">
+		<div class="container">
+			<div class="content row">
+
+				<div class="row">
+					<div class="col-md-3 res-m-bttm-sm">
+						<h2 class="heading-section-16 heading-md">Available for Everyone</h2>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-md-6 res-m-bttm-xs">
+								<p>At One Stop Legal Solutions, we believe that quality legal and business services
+									should be accessible to everyone, regardless of their size, location, or budget.
+									That's why we've designed our services to be flexible, affordable, and easy to
+									access. Whether you're an entrepreneur just starting out or a large corporation
+									looking to streamline operations, our team is here to provide the support you need,
+									when you need it.</p>
+							</div>
+							<div class="col-md-6 res-m-bttm-xs">
+								<p>We understand that every business is unique, which is why we offer personalized
+									packages that cater to your specific requirements. Our online platform ensures that
+									you can access our services from anywhere, at any time, making it easier than ever
+									to get the expert guidance you need to succeed. With One Stop Legal Solutions,
+									high-quality support is just a click away.</p>
+							</div>
+						</div>
+						<div class="gaps size-md"></div>
+						<div class="row">
+							<div class="col-md-6 res-m-bttm">
+								<img class="no-round" src="https://images.pexels.com/photos/2422277/pexels-photo-2422277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+							</div>
+							<div class="col-md-6">
+								<h3 class="heading-md">Key Points:</h3>
+
+								<ul class="list-style arrow">
+									<li>Flexible and Affordable: Services designed to fit any budget and business size.
+									</li>
+									<li>Nationwide Reach: Accessible from anywhere with our online platform.</li>
+									<li>24/7 Availability: Access support whenever you need it, no matter the time or
+										place.</li>
+									<li>Commitment to Accessibility: Making quality legal and business services
+										available to all.</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<!-- Contents -->
+	<div class="section section-contents section-pad bg-light">
+		<div class="container">
+			<div class="content row">
+
+				<div class="row">
+					<div class="col-sm-6 pad-r res-m-bttm-sm">
+						<img src="image/photo-in-c.jpg" alt="" />
+					</div>
+					<div class="col-sm-6">
+						<span class="gaps size-sm"></span>
+						<h3 class="heading-section headng-md-lead">Frequently Answers &amp; Questions</h3>
+						<span class="gaps size-xs"></span>
+						<p>These are just some of the most common questions we get asked. For anything else, please
+							contact us.</p>
+						<!-- Accordion -->
+						<div class="panel-group accordion" id="another" role="tablist" aria-multiselectable="true">
+							<!-- each panel for accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="accordion-i1">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
+											href="#accordion-pane-i1" aria-expanded="false">
+											What services does One Stop Legal Solutions, LLC offer?
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="accordion-pane-i1" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="accordion-i1">
+									<div class="panel-body">
+										<p>We offer a wide range of services including business formation, legal
+											compliance, tax planning, business credit building, funding solutions, and
+											website development. Our goal is to provide comprehensive support for your
+											business at every stage.</p>
+									</div>
+								</div>
+							</div>
+							<!-- each panel for accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="accordion-i2">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
+											href="#accordion-pane-i2" aria-expanded="false">
+											How do I get started with setting up my business?
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="accordion-pane-i2" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="accordion-i2">
+									<div class="panel-body">
+										<p>Getting started is easy! Contact us to schedule a consultation, and we'll
+											guide you through the entire process, from choosing the right business
+											structure to filing all necessary paperwork.</p>
+									</div>
+								</div>
+							</div>
+							<!-- each panel for accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="accordion-i3">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
+											href="#accordion-pane-i3" aria-expanded="false">
+											How can One Stop Legal Solutions assist with building business credit?
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="accordion-pane-i3" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="accordion-i3">
+									<div class="panel-body">
+										<p> We guide you through the process of establishing and enhancing your business
+											credit profile, which is crucial for securing financing and obtaining
+											favorable terms with suppliers.</p>
+
+									</div>
+								</div>
+							</div>
+							<!-- each panel for accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="accordion-i4">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#another"
+											href="#accordion-pane-i4" aria-expanded="false">
+											What is the process for developing a website with your team?
+											<span class="plus-minus"><span></span></span>
+										</a>
+
+									</h4>
+								</div>
+								<div id="accordion-pane-i4" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="accordion-i4">
+									<div class="panel-body">
+										<p>Our website development process begins with understanding your brand and
+											business goals. We then create a custom website that reflects your brand
+											identity, enhances your online presence, and supports your business
+											objectives.</p>
+									</div>
+								</div>
+							</div>
+							<!-- end each panel -->
+						</div>
+						<!-- Accordion #end -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+
+
+	<!-- Content -->
+
+
+
+
+
+	<!-- Call Action -->
+	<div class="call-action cta-small has-bg bg-secondary">
+		<div class="cta-block">
+			<div class="container">
+				<div class="content row">
+
+					<div class="cta-sameline">
+						<h2>Have any Question?</h2>
+						<p>We're here to help. Send us an email or call our expert at +012-345-6789.</p>
+						<a class="btn btn-alt" href="#">Contact Us</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+
+	<!-- Footer Widget-->
+	<div class="footer-widget style-v2 section-pad-md">
+		<div class="container">
+			<div class="row">
+
+				<div class="widget-row row">
+					<div class="footer-col col-md-3 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-text">
+							<div class="wgs-content">
+								<p><img src="image/OSLSblack.png"  alt=""></p>
+								<p>Business consulting and compliance, LLC is a leading provider of business services,
+									dedicated to simplifying the complexities of starting and operating a business, so
+									clients can focus on growing their ventures.</p>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-3 col-sm-6 col-md-offset-1 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-menu">
+							<h5 class="wgs-title">Our Services</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="businessFormation.html">Business Formation</a></li>
+									<li><a href="ein.html">EIN Numbers</a></li>
+									<li><a href="businessPlan.html">Business Plan Creation</a></li>
+									<li><a href="businessCredit.html">Business Credit</a></li>
+									<li><a href="funding.html">Funding Partnership</a></li>
+									<li><a href="wedev.html">Website Creation</a></li>
+									<!-- <li><a href="paymentsetup.html">Website Payment Setup</a></li> -->
+									<li><a href="MarketingStrategy.html">Marketing Strategy</a></li>
+									<li><a href="propertyAcquisition.html">Property Acquisition</a></li>
+									<li><a href="zoning.html">Zoning, Permitting, and Planning</a></li>
+									<li><a href="Compliance.html">Compliance</a></li>
+									<li><a href="Insurance.html">Insurance</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+
+
+					<div class="footer-col col-md-3 col-sm-6">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer">
+							<h5 class="wgs-title">Contact Us</h5>
+							<div class="wgs-content">
+								<p>
+									2950 Buskirk Ave #300, Walnut Creek, CA 94597
+								</p>
+								<p>
+									<em class="fa fa-envelope" aria-hidden="true"></em> Email: <a href="mailto:info@onestoplegalsolutions.com">info@onestoplegalsolutions.com</a>
+								</p>
+								<p>
+									<em class="fa fa-phone" aria-hidden="true"></em> Phone: 
+									<a href="tel:8008062340">800-806-2340</a>
+								</p>
+								<ul class="social">
+									<li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a></li>
+									<li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a></li>
+									<li><a href="#"><em class="fa fa-linkedin" aria-hidden="true"></em></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					
+
+				</div><!-- Widget Row -->
+
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Widget -->
+
+	<!-- Copyright -->
+	<div class="copyright style-v2">
+		<div class="container">
+			<div class="row">
+
+				<div class="row">
+					<div class="site-copy col-sm-7">
+						<p>&copy; 2024 mmr <a href="#">Policy</a></p>
+					</div>
+					<div class="site-by col-sm-5 al-right">
+						<p>Template Made by <a href="http://softnio.com/" target="_blank">mmr.</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Copyright -->
+
+	<!-- Rreload Image for Slider -->
+	<div class="preload hide">
+		<img alt="" src="image/slider-sm-a.jpg">
+		<img alt="" src="image/slider-sm-b.jpg">
+	</div>
+	<!-- End -->
+
+	<!-- Preloader !active please if you want -->
+	<!-- <div id="preloader"><div id="status">&nbsp;</div></div> -->
+	<!-- Preloader End -->
+
+	<!-- JavaScript Bundle -->
+	<script src="js/jquery.bundle.js"></script>
+	<!-- Theme Script init() -->
+	<script src="js/script.js"></script>
+	<!-- End script -->
+</body>
+
+<!-- Mirrored from demo.themenio.com/finance/index-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 19:37:07 GMT -->
+
+</html>

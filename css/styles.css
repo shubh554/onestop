@@ -1,0 +1,39 @@
+.sutom-grid-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    background: #000000 !important;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 11;
+    padding: 10px !important;
+}
+
+.navbar ul li {
+    color: white;
+}
+
+
+.banner-text h2{
+  color: rgb(240, 240, 240);
+}
+
+.banner-text p {
+    color: #e4e4e4;
+}
+
+
+.nv-img {
+    width: 80px;
+}
+
+
+.wgs-content p img {
+    width: 120px;
+}
